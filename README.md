@@ -1,5 +1,3 @@
-# Data-Exploration_Analyzing-Housing-and-Visit-Patterns
-
 ## Project Overview
 This project explores various urban metrics, including average rent, population size, household data, and both physical and virtual visit trends across multiple cities. The goal is to understand and visualize key patterns and relationships within the data, as well as to gain insights into specific Metropolitan Statistical Areas (MSAs). Additionally, the project applies time series forecasting models to predict future trends in average rent:
 1. Pattern Identification for Average Rent: Initial forecasting models (ARIMA and Exponential Smoothing) focus solely on historical rental price patterns.
