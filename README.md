@@ -15,20 +15,16 @@ The dataset includes the following columns:
 
 ## Results and Observations
 ### Correlation Analysis
-Correlation Coefficients: 
 Examined correlations between average_rent and other features, finding notable associations with variables such as total_population, physical_visits, and virtual_visits. This analysis helped prioritize features for predictive modeling by highlighting those most closely related to rental prices.
 
-## Forecasting Models
-1. ARIMA Model
-The ARIMA model was chosen for its ability to capture linear trends and seasonality in time series data.
+### Forecasting Models
+1. ARIMA Model: Chosen for its ability to capture linear trends and seasonality in time series data.
 While ARIMA effectively captured general trends, the discrepancy between training and testing RMSE suggests it might not fully generalize, particularly if there are non-linear relationships in the data that it cannot easily capture.
 
-2. Exponential Smoothing Model
-Exponential Smoothing was selected for its strength in handling seasonality by weighting recent observations more heavily. This approach is beneficial for data with seasonal or cyclic patterns, as it emphasizes recent trends while smoothing out past fluctuations.
+2. Exponential Smoothing Model: Selected for its strength in handling seasonality by weighting recent observations more heavily. This approach is beneficial for data with seasonal or cyclic patterns, as it emphasizes recent trends while smoothing out past fluctuations.
 It performed reliably by focusing on the seasonality and general trend without overfitting to specific data points.
 
-3. Random Forest Regression
-A Random Forest Regressor was used to capture complex and potentially non-linear relationships between average_rent and multiple features (total_population, total_household, physical_visits, and virtual_visits).
+3. Random Forest Regression: Used to capture complex and potentially non-linear relationships between average_rent and multiple features (total_population, total_household, physical_visits, and virtual_visits).
 It offered flexibility in capturing complex feature interactions but may have overfit the training data, as evidenced by the high test RMSE.
 
 All three models forecasted upward trends in rental prices, consistent with historical data.
